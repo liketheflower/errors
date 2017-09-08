@@ -24,3 +24,17 @@ _tkinter.TclError: couldn't connect to display ":0.0"
 
 
 export DISPLAY=:10.0
+
+
+
+# error 3
+
+  window = Tk.Tk()
+  File "/usr/lib64/python2.7/lib-tk/Tkinter.py", line 1745, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+_tkinter.TclError: couldn't connect to display ":10.0"
+
+solution:
+detach the screen and reattach then the problem is solved.
+
+
